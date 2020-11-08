@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies System</title>
+    <link rel="stylesheet" href="./resources/css/global.css">
+    <link rel="stylesheet" href="./vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendors/style.css">
+    <link rel="stylesheet" href="./resources/css/nav-bar.css">
+    <link rel="stylesheet" href="./resources/css/movie-detail.css">
+
+    <script src="./vendors/jquery-3.5.1.min.js"></script>
+    <script src="./vendors/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="page-content">
+        <div class="movie-detail-controller">
+            <div id="main-banner" class="main-banner row mx-0 align-items-center">
+            </div>
+            <div class="row movie-additional-details-container px-0 px-sm-5 mt-4 align-items-baseline">
+                <section class="col-12 col-md-6 story-line-section">
+                    <h2 class="story-line-title">
+                        StoryLine
+                    </h2>
+                    <p id="story-line" class="story-content">
+                    </p>
+                </section>
+                <section class="col-12 col-md-6 movie-detail-summary-section">
+                    <div id="movie-detail-summary" class="movie-detail-summary-container">
+                        <h2>Details</h2>
+                    </div>
+                </section>
+                <section class="col-12">
+                    <div id="movie-cast-list" class="movie-cast-list-container col-12 px-0 row justify-content-center">
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="./resources/js/movies-service.js"></script>
+    <script src="./resources/js/spinner-component.js"></script>
+    <script src="./resources/js/main-nav-bar.js"></script>
+    <script src="./resources/js/config.js"></script>
+    <script src="./resources/js/movie-detail.js"></script>
+</body>
+</html>

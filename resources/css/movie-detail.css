@@ -1,0 +1,139 @@
+.main-banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+  .main-banner .movie-bacdrop-image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    top: 0;
+  }
+  .main-banner::after {
+    content: '';
+    width: 100%;
+    height: 75%;
+    top: 0;
+    position: absolute;
+    background: linear-gradient(to bottom, #a11f3bab 0%, #9352b3f5 100%);
+  }
+  .main-banner .banner-content {
+    position: relative;
+    width: 100%;
+    margin-top: 45vh;
+    z-index: 100;
+    color: white;
+    text-align: center;
+  }
+  .main-banner .banner-content .movie-poster {
+    box-shadow: 0 0 10px 3px #5d5a5aa8;
+    object-fit: cover;
+    max-width: 300px;
+  }
+  .main-banner .banner-content .movie-title {
+    text-align: left;
+    font-family: 'QuickSand-Bold';
+    font-size: 35px;
+  }
+  .main-banner .banner-content .movie-release-data {
+    font-family: 'QuickSand-Regular';
+  }
+  .main-banner .banner-content .genres-list {
+    display: inline-block;
+    border-right: 1px solid gainsboro;
+    height: fit-content;
+    font-family: 'QuickSand-Regular';
+  }
+  .main-banner .banner-content .genres-list ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+  .main-banner .banner-content .genres-list ul li {
+    display: inline-block;
+    padding: 0 2px;
+  }
+  .main-banner .banner-content .genres-list ul li::after {
+    content: ',';
+  }
+  .main-banner .banner-content .genres-list ul li:last-child::after {
+    content: '';
+  }
+  .main-banner .banner-content .visual-rating {
+    color: #ffe600;
+    font-family: 'QuickSand-Regular';
+  }
+  .movie-additional-details-container {
+    margin: 0;
+  }
+  .movie-additional-details-container .story-line-title {
+    font-family: 'QuickSand-Bold';
+  }
+  .movie-additional-details-container .movie-detail-summary-section, .movie-additional-details-container .story-line-section {
+    height: fit-content;
+    padding: 10px;
+    font-family: 'QuickSand-Regular';
+  }
+
+  .movie-detail-summary-container {
+    border: 1px solid gainsboro;
+    padding: 20px;
+  }
+  .movie-detail-summary-container .single-info {
+    border-bottom: 1px dashed gainsboro;
+    padding: 10px 0;
+  }
+  .movie-detail-summary-container .single-info:last-child {
+    border-bottom: 0;
+  }
+  .movie-detail-summary-container .single-info .key {
+    font-weight: bold;
+  }
+
+.person-profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px #dedede;
+}
+
+.cast-title {
+    font-family: 'QuickSand-Bold';
+}
+
+.person-name {
+    text-align: center;
+    font-family: 'QuickSand-SemiBold';
+}
+
+  @media screen and (max-width: 767px) {
+    .genres-list, .rating, .movie-release-data, .movie-title {
+      color: black;
+      text-align: center;
+    }
+    .genres-list h2, .rating h2, .movie-release-data h2, .movie-title h2 {
+      text-align: center !important;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .movie-poster {
+      width: 95%;
+    }
+  }
+  @media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .movie-additional-details-container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .movie-additional-details-container {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  

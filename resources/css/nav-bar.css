@@ -1,0 +1,86 @@
+.main-header-container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+  }
+.main-header-container nav{
+  background: transparent;
+}
+
+.main-header-container.opened nav{
+  background-color: #212529;
+}
+
+  .main-header-container .site-name-logo {
+    color: white;
+  }
+  .main-header-container .main-nav-items-container {
+    list-style-type: none;
+  }
+  .main-header-container .main-nav-items-container .nav-item {
+    display: inline-block;
+  }
+  .main-header-container .main-nav-items-container .nav-item a {
+    color: white;
+  }
+  .main-header-container .icon-video-player {
+    font-size: 50px;
+  }
+  .main-header-container .site-name {
+    height: fit-content;
+    font-size: 25px;
+  }
+  .navbar {
+    transition: background 1s;
+  }
+  .navbar .icon-menu {
+    color: white;
+  }
+  .navbar .navbar-toggler {
+    border: 0;
+  }
+  .navbar .navbar-toggler:focus {
+    outline: none;
+  }
+  .navbar .navbar-collapse {
+    flex-grow: unset;
+  }
+  .navbar .navbar-collapse.opened {
+    display: block;
+  }
+  .navbar .navbar-collapse.closed {
+    display: none;
+  }
+  .navbar .navbar-brand {
+    display: flex;
+    color: white;
+    font-family: 'QuickSand-Bold';
+    text-transform: uppercase;
+  }
+  .navbar .navbar-brand:hover {
+    color: white;
+    text-decoration: none;
+  }
+  .navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link:hover {
+    color: white;
+    cursor: pointer;
+    font-family: 'QuickSand-SemiBold';
+  }
+  
+  .navbar.opened {
+    background: #212529;
+  }
+  .navbar.closed {
+    background: transparent;
+  }
+  @media screen and (max-width: 400px) {
+    .site-name {
+      font-size: 18px !important;
+    }
+    .navbar-brand, .navbar-collapse {
+      padding: 0;
+    }
+  }
+  

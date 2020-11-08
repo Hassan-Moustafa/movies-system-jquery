@@ -1,0 +1,140 @@
+.card-container {
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .card-container:after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    z-index: 9;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(bottom, rgba(35, 35, 37, 0.9) 0%, rgba(35, 35, 37, 0.5) 35%, rgba(22, 22, 23, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  }
+  .card-container .card-info-container {
+    z-index: 100;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 50;
+    background: linear-gradient(to bottom, #a11f3b9c 0%, #9352b345 100%);
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+  }
+  .card-container .card-info-container:hover {
+    opacity: 1;
+  }
+  .card-container .card-info-container:hover .mainTitle {
+    bottom: 60px;
+  }
+  .card-container .card-info-container:hover .subTitle {
+    bottom: 20px;
+  }
+  .card-container .card-info-container:hover .rating {
+    top: 45px;
+  }
+  .card-container .card-info-container:hover .visual-rating {
+    top: 15px;
+  }
+  .card-container .card-info-container:hover .details-btn {
+    opacity: 1;
+  }
+  .card-container .card-info-container .mainTitle, .card-container .card-info-container .subTitle, .card-container .card-info-container .rating, .card-container .card-info-container .visual-rating {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    font-family: 'QuickSand-Regular';
+    width: 100%;
+    bottom: 20px;
+    line-height: 1.1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  .card-container .card-info-container .mainTitle {
+    font-family: 'QuickSand-SemiBold';
+  }
+  .card-container .card-info-container .subTitle {
+    bottom: 0px;
+    font-size: 18px;
+  }
+  .card-container .card-info-container .rating, .card-container .card-info-container .visual-rating {
+    bottom: unset;
+    top: 0px;
+    font-size: 18px;
+  }
+  .card-container .card-info-container .visual-rating {
+    color: #ffe600;
+  }
+  .card-container .card-info-container .details-btn {
+    opacity: 0;
+    background-color: #9352b3;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 20px 14px;
+    font-family: 'QuickSand-SemiBold';
+    margin: 0 auto;
+    top: 40%;
+  }
+  .card-container .card-info-container .details-btn:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 0 0 0 10px rgba(147, 82, 179, 0.4);
+    -moz-box-shadow: 0 0 0 10px rgba(147, 82, 179, 0.4);
+    box-shadow: 0 0 0 10px rgba(147, 82, 179, 0.4);
+  }
+  @media screen and (max-width: 768px) {
+    .card-info-container {
+      opacity: 1 !important;
+      background: -webkit-linear-gradient(bottom, #232325 0%, rgba(35, 35, 37, 0.5) 35%, rgba(22, 22, 23, 0) 60%, #232325 100%) !important;
+    }
+    .card-info-container .mainTitle {
+      bottom: 60px !important;
+    }
+    .card-info-container .subTitle {
+      bottom: 20px !important;
+    }
+    .card-info-container .rating {
+      top: 45px !important;
+    }
+    .card-info-container .visual-rating {
+      top: 15px !important;
+    }
+    .card-info-container .details-btn {
+      opacity: 1 !important;
+    }
+  }
+  
+  @media screen and (min-width: 490px) and (max-width: 575px) {
+    .card-container {
+      width: 58%;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 360px) and (max-width: 489px) {
+    .card-container {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  

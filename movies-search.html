@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies System</title>
+    <link rel="stylesheet" href="./resources/css/global.css">
+    <link rel="stylesheet" href="./vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendors/style.css">
+    <link rel="stylesheet" href="./resources/css/nav-bar.css">
+    <link rel="stylesheet" href="./resources/css/movies-search.css">
+    <link rel="stylesheet" href="./resources/css/movie-card.css">
+
+    <script src="./vendors/jquery-3.5.1.min.js"></script>
+    <script src="./vendors/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="page-content">
+        <div class="movies-search-container">
+            <div class="main-banner row mx-0 align-items-center">
+                <div class="banner-content">
+                    <p id="main-page-title"></p>
+                </div>
+            </div>
+
+            <div id="search-input-container" class="row mx-0 justify-content-center my-5">
+                <div class="search-input col-12 col-sm-10 col-md-6 px-2 px-sm-0 input-group">
+                    <input 
+                        id="search-movie-input"
+                        type="text" 
+                        class="form-control"
+                        placeholder="Search for Movies"
+                        maxlength="30"
+                        >
+                    <div class="input-group-append">
+                        <span class="input-group-text search-btn" id="basic-addon2" onclick="searchForMovie()">
+                            <span class="icon-search"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="movies-list">
+                <div id="movies-list" class="movies-list row mx-0 my-2">
+                </div>
+            </div>
+
+            <div class="pagination-container row mx-0 align-items-baseline justify-content-center">
+                <div class="left-arrow col-auto" onclick="goBack()">«</div>
+                <ul id="pagination-pages-numbers-list" class="pages-numbers-list col-auto">
+                </ul>
+                <div class="right-arrow col-auto" onclick="goForward()">»</div>
+            </div>
+            
+            <div id="fall-back-content" class="no-data-found-container row mx-0 justify-content-center align-items-center">
+                <span class="icon-error col-auto px-0"></span>
+                <span class="error-msg col-auto">No data found</span>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <script src="./resources/js/config.js"></script>
+    <script src="./resources/js/spinner-component.js"></script>
+    <script src="./resources/js/movies-service.js"></script>
+    <script src="./resources/js/movie-search.js"></script>
+    <script src="./resources/js/main-nav-bar.js"></script>
+</body>
+</html>
